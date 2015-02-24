@@ -1,0 +1,184 @@
+/*
+ *
+ *   jQuery Helio v1.0.0 - Responsive Bootstrap Menu
+ *   Copyright 2015
+ *
+*/
+.helio-menu{
+  width: 220px;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 101;
+  background-color:#1A2229;
+  border-color: #2f4050;
+}
+.helio-menu > li.active {
+  border-left: 4px solid #00ACAC;
+  background: #293846;
+}
+.helio-menu > li.active > a:first-child,
+.helio-menu > li.active > a:focus,
+.helio-menu > li.active > a:active,
+.helio-menu > li.active > ul > li.active > a:first-child,
+.helio-menu > li.active > ul > li.active > a:focus,
+.helio-menu > li.active > ul > li.active > a:active{
+  background: #293846;
+  font-weight: 600;
+}
+.helio-menu > li a:focus{
+  background-color: #293846 !important;
+  font-weight: 600;
+  outline: 0;
+}
+.helio-menu > li > a {
+  outline: 0;
+  color: #a7b1c2;
+  font-weight: 300;
+  padding: 14px 20px 14px 25px;
+}
+.helio-menu > li a:hover{
+  background: #293846;
+}
+.helio-menu .nav-second-level > li.active {
+  border: none;
+}
+.helio-menu .nav-second-level.collapse[style] {
+  height: auto !important;
+}
+.helio-menu .nav-second-level li,
+.helio-menu .nav-third-level li {
+  border-bottom: none !important;
+}
+.helio-menu .nav-second-level li a {
+  padding: 7px 10px 7px 10px;
+  padding-left: 52px;
+  color:#ccc;
+}
+.helio-menu .nav-third-level li a {
+  padding-left: 62px;
+}
+.helio-menu .nav-second-level li:last-child {
+  margin-bottom: 10px;
+}
+
+.nav-second-level li,
+.nav-third-level li {
+  border-bottom: none !important;
+}
+.nav-second-level li a {
+  padding: 7px 10px 7px 10px;
+  padding-left: 52px;
+}
+.nav-third-level li a {
+  padding-left: 62px;
+}
+.nav-second-level li:last-child {
+  margin-bottom: 10px;
+}
+body:not(.fixed-sidebar).mini-navbar .nav li:hover > .nav-second-level,
+.mini-navbar .nav li:focus > .nav-second-level {
+  display: block;
+  border-radius: 0 2px 2px 0;
+  min-width: 140px;
+  height: auto;
+}
+body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
+  font-size: 12px;
+  border-radius: 3px;
+}
+.mini-navbar .nav-second-level li a {
+  padding: 10px 10px 10px 15px;
+}
+.mini-navbar .nav-second-level {
+  position: absolute;
+  left: 70px;
+  top: 0px;
+  background-color: #2f4050;
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+}
+.mini-navbar li.active .nav-second-level {
+  left: 65px;
+}
+.navbar-default .special_link a {
+  background: #1ab394;
+  color: white;
+}
+.navbar-default .special_link a:hover {
+  background: #17987e !important;
+  color: white;
+}
+.navbar-default .special_link a span.label {
+  background: #fff;
+  color: #1ab394;
+}
+
+.arrow {
+    float: right;
+    line-height: 1.42857;
+}
+.glyphicon.arrow:before {
+    content: "\e079";
+}
+.active > a > .glyphicon.arrow:before {
+    content: "\e114";
+}
+
+/*
+ * Require Font-Awesome
+ * http://fortawesome.github.io/Font-Awesome/
+*/
+.fa.arrow:before {
+    content: "\f104";
+}
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+.plus-times {
+    float: right;
+}
+.fa.plus-times:before {
+    content: "\f067";
+}
+.active > a > .fa.plus-times {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.plus-minus {
+    float: right;
+}
+.fa.plus-minus:before {
+    content: "\f067";
+}
+.active > a > .fa.plus-minus:before {
+    content: "\f068";
+}
+
+/* Toggle Animation */
+.helio-toggle-left{
+  transition:All 1.6s ease-out;
+  -webkit-transition:All 1.6s ease-out;
+  -moz-transition:All 1.6s ease-out;
+  -o-transition:All 1.6s ease-out;
+  transform: translate(202px);
+  -webkit-transform: translate3d(-600px, 0, 0);
+  -moz-transform: translate3d(-600px, 0, 0);
+  -o-transform: translate3d(-600px, 0, 0);
+  -ms-transform: translate3d(-600px, 0, 0);
+}
+.helio-toggle-right{
+  transition:All 1.6s ease-out;
+  -webkit-transition:All 1.6s ease-out;
+  -moz-transition:All 1.6s ease-out;
+  -o-transition:All 1.6s ease-out;
+  transform: translate(202px);
+  -webkit-transform: translate3d(30px, 0, 0);
+  -moz-transform: translate3d(30px, 0, 0);
+  -o-transform: translate3d(30px, 0, 0);
+  -ms-transform: translate3d(30px, 0, 0);
+}
